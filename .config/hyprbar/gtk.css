@@ -1,0 +1,54 @@
+#settings_popup {
+    background-color: #2b1e1c;
+    border-radius: 12px;
+    border: #2b1e1c;
+    padding: 15px;
+}
+
+#settings_popup label {
+    color: #f8f8f2;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+#settings_popup button {
+    background-color: #44475a;
+    color: #f8f8f2;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 4px 0;
+}
+
+#settings_popup button:hover {
+    background-color: #6272a4;
+}
+
+#settings_popup scale trough {
+    background-color: #44475a;
+    border-radius: 6px;
+    height: 6px;
+}
+
+#settings_popup scale slider {
+    background-color: #bd93f9;
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
+}
+
+#settings_popup scale:hover slider {
+    background-color: #ff79c6;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.username-label {
+    font-weight: bold;
+    color: #f8f8f2;
+    font-size: 14px;
+    margin-left: 10px;
+}

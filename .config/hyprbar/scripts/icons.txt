@@ -1,0 +1,10 @@
+reboot : 
+poweroff: 
+sleep: 
+lock: 
+
+wifi: 
+wifi off: 
+bluetooth: 
+bluetooth off: 
+airplane: 
