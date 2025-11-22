@@ -1,6 +1,7 @@
-===============================
-DOTFILES README (Bare Repo)
-===============================
+<p align="center">
+  DOTFILES README (Bare Repo)
+</p>
+
 
 This repository uses the Git bare-repo method to manage dotfiles directly from
 the home directory without storing a .git folder inside $HOME.
