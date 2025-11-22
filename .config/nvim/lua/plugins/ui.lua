@@ -33,7 +33,6 @@ return {
       vim.cmd.colorscheme("catppuccin-mocha")
     end,
   },
-
   {
     "xiyaowong/transparent.nvim",
     lazy = false,
