@@ -104,7 +104,7 @@ Example:
 
 Clone the bare repo:
 
-    git clone --bare git@github.com:USERNAME/dotfiles.git $HOME/.dotfiles
+    git clone --bare git@github.com:R2IProject/dotfiles.git
 
 Create the config alias temporarily:
 
