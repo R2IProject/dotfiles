@@ -18,16 +18,23 @@ Create a bare repo in your home directory:
 Add the "config" alias
 
 For ZSH users:
-    Add this line to ~/.zshrc:
+Add this line to ~/.zshrc:
+    
         alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-    Reload shell:
+        
+Reload shell:
+
         source ~/.zshrc
 
 For FISH users:
-    Add this line to ~/.config/fish/config.fish:
+Add this line to ~/.config/fish/config.fish:
+    
         alias config '/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-    Reload shell:
+
+Reload shell:
+    
         source ~/.config/fish/config.fish
+        
 ---------------------------------------
 
 Hide untracked files so your entire $HOME doesn't appear in `config status`:
@@ -40,16 +47,19 @@ Hide untracked files so your entire $HOME doesn't appear in `config status`:
 -----------------------------
 
 Example: add Neovim config:
+
     config add .config/nvim
     config commit -m "Add nvim config"
     config push
 
 Example: add Hyprbar config:
+
     config add .config/hyprbar
     config commit -m "Add hyprbar config"
     config push
 
 Example: add local fonts (recommended to use ~/.local/share/fonts):
+
     config add .local/share/fonts
     config commit -m "Add local fonts"
     config push
@@ -62,12 +72,15 @@ Example: add local fonts (recommended to use ~/.local/share/fonts):
 Modify files normally (example: ~/.config/nvim/init.lua)
 
 Check what changed:
+
     config status
 
 Commit changes:
+
     config commit -am "Describe the update"
 
 Push to GitHub:
+
     config push
 
 NOTE:
@@ -79,6 +92,7 @@ NOTE:
 -----------------------------------------
 
 Example:
+
     config add .config/tmux/tmux.conf
     config commit -m "Add tmux config"
     config push
@@ -89,20 +103,25 @@ Example:
 -----------------------------------------
 
 Clone the bare repo:
+
     git clone --bare git@github.com:USERNAME/dotfiles.git $HOME/.dotfiles
 
 Create the config alias temporarily:
+
     alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 Backup conflicting files:
+
     mkdir -p $HOME/dotfiles-backup
 
 Checkout dotfiles into $HOME:
+
     config checkout
 
 If errors appear, move the conflicting files to dotfiles-backup then run again.
 
 Hide untracked files:
+
     config config --local status.showUntrackedFiles no
 
 Re-add the alias permanently in ~/.zshrc or ~/.config/fish/config.fish.
@@ -113,12 +132,15 @@ Re-add the alias permanently in ~/.zshrc or ~/.config/fish/config.fish.
 -----------------------------------------
 
 List tracked files:
+
     config ls-files
 
 Remove file from Git but keep it on disk:
+
     config rm --cached <file>
 
 View changes:
+
     config diff
 
 -----------------------------------------
