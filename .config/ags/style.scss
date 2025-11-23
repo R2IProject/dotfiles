@@ -1,0 +1,117 @@
+window.FloatingWindow {
+  background: transparent;
+  padding-top: 10px;
+  padding-right: 20px;
+  font-family: "Cormorant Garamond";
+
+  .profile-container {
+    background: #080D17;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #E8CFB3;
+  }
+
+  .power-row {
+    background: #080D17;
+    border-radius: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #E8CFB3;
+  }
+
+  .tray-container-row {
+    background: #080D17;
+    border-radius: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #E8CFB3;
+  }
+
+  .username-class {
+    font-size: 50px;
+    color: #E8CFB3;
+  }
+
+  .uptime-class {
+    font-size: 20px;
+    color: #E8CFB3;
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  .power-button {
+    background: transparent;
+  }
+
+  .power-icon {
+    font-size: 45px;
+    color: #E8CFB3;
+  }
+
+  .wifi-icon {
+    font-size: 35px;
+    color: #E8CFB3;
+  }
+
+  .lock-power-icon {
+    font-size: 45px;
+    color: #E8CFB3;
+  }
+
+  window.FloatingWindow {
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  window.FloatingWindow.open {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .slide-box {
+    padding: 10px;
+  }
+
+  .settings-icon {
+    color: #E8CFB3;
+    font-size: 50px;
+    margin-left: -20px;
+  }
+
+  .brightness-icon {
+    color: #E8CFB3;
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .custom-slider {
+    all: unset;
+  }
+
+  .custom-slider trough slider {
+    all: unset;
+  }
+
+  .custom-slider trough {
+    all: unset;
+    background: #1A2130;
+    min-height: 8px;
+    border-radius: 16px
+  }
+
+  .custom-slider trough highlight {
+    all: unset;
+    min-width: 8px;
+    border-radius: 16px;
+    background: #E8CFB3;
+  }
+
+}
