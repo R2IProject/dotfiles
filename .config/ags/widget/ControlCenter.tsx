@@ -107,7 +107,7 @@ export default function Floating(gdkmonitor: Gdk.Monitor) {
               <button
                 class="power-button"
                 onClicked={() =>
-                  exec(["bash", "-c", "swaylock-fancy -e -K -p 10 -f Hack-Regular"])
+                  exec(["bash", "-c", "~/.config/Launcher/config-launcher.sh"])
                 }
               >
                 <label class="settings-icon" label="" />

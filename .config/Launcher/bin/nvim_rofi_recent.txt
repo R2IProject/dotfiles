@@ -1,0 +1,4 @@
+/home/wreana/Documents
+/home/wreana/Documents/Maleotech/microsite-maleo-project/esiam-poltekmeta
+/home/wreana
+/home/wreana/.config
