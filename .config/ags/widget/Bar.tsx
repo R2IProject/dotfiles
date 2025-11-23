@@ -14,7 +14,6 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
       class="Bar"
       gdkmonitor={gdkmonitor}
       exclusivity={Astal.Exclusivity.EXCLUSIVE}
-      anchor={TOP | LEFT | RIGHT}
       application={app}
     >
       <centerbox cssName="centerbox">
