@@ -4,3 +4,4 @@
 
 vim.g.lazyvim_check_order = false
 vim.g.root_spec = { "cwd" }
+vim.opt.laststatus = 0

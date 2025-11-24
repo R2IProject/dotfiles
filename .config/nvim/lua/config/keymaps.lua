@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
+
 -- Buffer Configuration
 local last_buf = nil
 vim.api.nvim_create_autocmd("BufLeave", {
