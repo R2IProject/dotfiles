@@ -1,8 +1,8 @@
 * {
-  font-family: "Cormorant Garamond";
+  font-family: "Hack";
   font-size: 20px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 window#waybar {
@@ -11,7 +11,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: #e8cfb3;
+  color: #e6e6e6;
 }
 
 #workspaces button {
@@ -19,8 +19,8 @@ window#waybar {
 }
 
 #workspaces {
-  background-color: #080d17;
-  border: 1px solid #e8cfb3;
+  background-color: #121212;
+  padding: 5px;
 }
 
 .modules-left {
@@ -35,59 +35,55 @@ window#waybar {
 #pulseaudio,
 #backlight,
 #custom-weather {
-  color: #e8cfb3;
-  background-color: #080d17;
+  color: #e6e6e6;
+  background-color: #121212;
   margin: 0 15px 0 0px;
   padding: 0 15px 0 15px;
-  border: 1px solid #e8cfb3;
 }
 
 #custom-settings {
-  color: #e8cfb3;
-  border: 1px solid #e8cfb3;
-  background-color: #080d17;
+  color: #e6e6e6;
+  background-color: #121212;
   font-size: 20px;
   margin-left: 10px;
   padding: 0px 20px 0px 15px
 }
 
 #network {
-  color: #e8cfb3;
-  background-color: #080d17;
+  color: #e6e6e6;
+  background-color: #121212;
   margin: 0 0px 0 0px;
   padding: 0 15px 0 15px;
-  border: 1px solid #e8cfb3;
 }
 
 #clock {
-  color: #e8cfb3;
-  background-color: #080d17;
+  color: #e6e6e6;
+  background-color: #121212;
   margin: 0 15px 0 0;
   padding: 0 15px 0 15px;
-  border: 1px solid #e8cfb3;
 }
 
 #network {
-  color: #e8cfb3;
+  color: #e6e6e6;
 }
 
 #pulseaudio {
-  color: #e8cfb3;
+  color: #e6e6e6;
 }
 
 #backlight {
-  color: #e8cfb3;
+  color: #e6e6e6;
 }
 
 #custom-weather {
-  color: #e8cfb3;
-  background-color: #080d17;
+  color: #e6e6e6;
+  background-color: #121212;
   padding: 0 15px 0 15px;
 }
 
 #custom-media {
-  color: #e8cfb3;
-  background-color: #080d17;
+  color: #e6e6e6;
+  background-color: #121212;
   margin: 0 0px 0 15px;
   padding: 0 15px 0 15px;
 }

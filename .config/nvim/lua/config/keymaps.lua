@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
-
 -- Buffer Configuration
 local last_buf = nil
 vim.api.nvim_create_autocmd("BufLeave", {
@@ -30,3 +29,13 @@ map("n", "<A-Tab>", ":BufferLineGoToBuffer<CR>", { desc = "Open buffer list with
 vim.keymap.set("n", "<leader>cf", function()
   require("conform").format({ async = true })
 end, { desc = "Format file" })
+
+vim.keymap.set("n", "<leader>ut", function()
+  require("utils.transparency").toggle()
+end, { desc = "Toggle transparency" })
+
+vim.keymap.set({ "n", "v" }, "d", '"_d')
+vim.keymap.set({ "n", "v" }, "x", '"_x')
+vim.keymap.set({ "n", "v" }, "c", '"_c')
+vim.keymap.set("x", "p", '"_dP')
+vim.keymap.set({ "n", "v" }, "<leader>x", '"+d')

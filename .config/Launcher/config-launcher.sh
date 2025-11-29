@@ -2,6 +2,7 @@
 
 declare -A DIRS=(
   ["Aylurs / AGS"]="$HOME/.config/ags"
+  ["Alacritty"]="$HOME/.config/alacritty"
   ["Hyprland"]="$HOME/.config/hypr"
   ["Waybar"]="$HOME/.config/hyprbar"
   ["Lazyvim / Neovim"]="$HOME/.config/nvim"

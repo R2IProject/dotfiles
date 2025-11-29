@@ -3,6 +3,7 @@ import { Gtk, Gdk, Astal } from "ags/gtk4"
 import { exec } from "ags/process"
 import { createPoll } from "ags/time"
 import { createState } from "gnim"
+import { toggleNetworkMenu } from "toggler/network"
 
 export default function Floating(gdkmonitor: Gdk.Monitor) {
   const { TOP, RIGHT } = Astal.WindowAnchor
@@ -77,7 +78,7 @@ export default function Floating(gdkmonitor: Gdk.Monitor) {
 
             {/* POWER */}
             <box class="power-row" spacing={20}>
-              <button onClicked={() => exec(["bash", "-c", "shutdown now"])}>
+              <button class="power-button" onClicked={() => exec(["bash", "-c", "shutdown now"])}>
                 <label class="power-icon" label="" />
               </button>
               <button class="power-button" onClicked={() => exec(["bash", "-c", "reboot"])}>
@@ -98,11 +99,11 @@ export default function Floating(gdkmonitor: Gdk.Monitor) {
 
             {/* TRAY */}
             <box class="tray-container-row" spacing={50}>
-              <button class="power-button" onClicked={() => exec(["bash", "-c", "nmcli"])}>
+              <button class="power-button" onClicked={toggleNetworkMenu}>
                 <label class="wifi-icon" label="󰤨" />
               </button>
               <button class="power-button" onClicked={() => exec(["bash", "-c", "blueman-manager"])}>
-                <label class="wifi-icon" label="󰂯" />
+                <label class="bluetooth-icon" label="󰂯" />
               </button>
               <button
                 class="power-button"

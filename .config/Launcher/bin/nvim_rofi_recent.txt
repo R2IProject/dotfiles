@@ -4,7 +4,9 @@
 /home/wreana
 /home/wreana/Documents/Maleotech/microsite-maleo-project
 /home/wreana/Documents/Maleotech/educourseid
+/home/wreana/Documents/Project/vbdecrypt
 /home/wreana/Documents/Maleotech/microsite-maleo-project/backend
 /home/wreana/Documents/Maleotech/MIP_SIA
-/home/wreana/Documents/Project/vbdecrypt
+/home/wreana/Documents/bin
 /home/wreana/Documents/Maleotech/microsite-maleo-project/esiam-poltekmeta
+/home/wreana/Documents/Ricing/code/OkPanel

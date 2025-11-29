@@ -2,46 +2,43 @@ window.FloatingWindow {
   background: transparent;
   padding-top: 10px;
   padding-right: 20px;
-  font-family: "Cormorant Garamond";
+  font-family: "Hack";
 
   .profile-container {
-    background: #080D17;
+    background: #121212;
     border-radius: 20px;
     padding-left: 40px;
     padding-right: 28px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border: 1px solid #E8CFB3;
   }
 
   .power-row {
-    background: #080D17;
+    background: #121212;
     border-radius: 20px;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border: 1px solid #E8CFB3;
   }
 
   .tray-container-row {
-    background: #080D17;
+    background: #121212;
     border-radius: 20px;
     padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 60px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border: 1px solid #E8CFB3;
   }
 
   .username-class {
     font-size: 50px;
-    color: #E8CFB3;
+    color: #e6e6e6;
   }
 
   .uptime-class {
     font-size: 20px;
-    color: #E8CFB3;
+    color: #e6e6e6;
     padding-top: 6px;
     padding-bottom: 10px;
   }
@@ -51,18 +48,29 @@ window.FloatingWindow {
   }
 
   .power-icon {
-    font-size: 45px;
-    color: #E8CFB3;
+    font-size: 30px;
+    color: #e6e6e6;
+  }
+
+  .settings-icon {
+    color: #e6e6e6;
+    font-size: 40px;
+    margin-left: -20px;
   }
 
   .wifi-icon {
     font-size: 35px;
-    color: #E8CFB3;
+    color: #e6e6e6;
+  }
+
+  .bluetooth-icon {
+    font-size: 40px;
+    color: #e6e6e6;
   }
 
   .lock-power-icon {
     font-size: 45px;
-    color: #E8CFB3;
+    color: #e6e6e6;
   }
 
   window.FloatingWindow {
@@ -80,14 +88,9 @@ window.FloatingWindow {
     padding: 10px;
   }
 
-  .settings-icon {
-    color: #E8CFB3;
-    font-size: 50px;
-    margin-left: -20px;
-  }
 
   .brightness-icon {
-    color: #E8CFB3;
+    color: #e6e6e6;
     font-size: 35px;
     margin-left: 20px;
   }
@@ -111,7 +114,60 @@ window.FloatingWindow {
     all: unset;
     min-width: 8px;
     border-radius: 16px;
-    background: #E8CFB3;
+    background: #e6e6e6;
   }
 
+  .network-menu-shell {
+    margin-top: 253px;
+    margin-right: 440px;
+    padding: 0;
+  }
+
+  .network-menu-block {
+    background: #121212;
+    border-radius: 20px;
+    padding: 12px 28px;
+  }
+
+
+  .network-menu-controls {
+    min-width: 300px;
+  }
+
+  .network-menu-list {
+    min-width: 300px;
+  }
+
+
+  .wifi-header-label {
+    font-size: 18px;
+    color: #e6e6e6;
+    font-weight: bold;
+  }
+
+  .wifi-ssid-label {
+    color: #e6e6e6;
+    font-size: 14px;
+  }
+
+
+  button {
+    all: unset;
+    background: #1A2130;
+    color: #e6e6e6;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    transition: background 0.1s ease;
+  }
+
+  button:hover {
+    background: #303747;
+  }
+
+  .network-controls-row button {
+    background: transparent;
+    color: #e6e6e6;
+    padding: 0 5px;
+  }
 }

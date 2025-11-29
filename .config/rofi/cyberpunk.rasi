@@ -1,16 +1,15 @@
 * {
-    bg-col: #1D2127;
+    bg-col: #121212;
     bg-col-light: #1e1e2e;
-    border-col: #e8cfb3;
-    selected-col: #1D2127;
-    blue: #e8cfb3;
-    fg-col: #cdd6f4;
-    fg-col2: #e8cfb3;
+    border-col: #121212;
+    selected-col: #121212;
+    blue: #e6e6e6;
+    fg-col: #e6e6e6;
+    fg-col2: #555a60;
     grey: #e8cfb3;
 
     width: 400;
-    font: "Cormorant Garamond";
-    font-weight: 900;
+    font: "Hack";
 }
 
 element-text, element-icon , mode-switcher {
