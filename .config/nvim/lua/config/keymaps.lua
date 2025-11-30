@@ -39,3 +39,9 @@ vim.keymap.set({ "n", "v" }, "x", '"_x')
 vim.keymap.set({ "n", "v" }, "c", '"_c')
 vim.keymap.set("x", "p", '"_dP')
 vim.keymap.set({ "n", "v" }, "<leader>x", '"+d')
+
+-- Tmux Keybind Configuration
+map("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Window Left" })
+map("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Window Down" })
+map("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Window Right" })
+map("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Window Up" })

@@ -5,4 +5,8 @@ return {
   { import = "lazyvim.plugins.extras.lang.tailwind" },
   { import = "lazyvim.plugins.extras.lang.prisma" },
   { import = "lazyvim.plugins.extras.lang.python" },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
 }
