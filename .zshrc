@@ -6,10 +6,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 source /usr/share/cachyos-zsh-config/cachyos-config.zsh
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 export PATH="$PATH:/home/wreana/.nvim/nvim-linux-x86_64/bin"
+
 alias love="nvim"
 alias ls="eza -aa --grid --color=never --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval $(thefuck --alias)
@@ -18,3 +22,11 @@ eval $(thefuck --alias fk)
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 eval "$(zoxide init zsh)"
 alias cd="z"
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export PATH=$PATH:/usr/bin
+
+unsetopt correct
+unsetopt correct_all
+
